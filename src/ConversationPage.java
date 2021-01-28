@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class ConversationPage extends JFrame {
 
-    private JButton sendButton;
+    public JButton sendButton;
     private JTextField jTextField;
     private JTextArea textArea;
 
