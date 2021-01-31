@@ -112,7 +112,7 @@ public class ConversationPage extends JFrame {
         }
 
         if (jTextField.getText().equals("who are you?")) {
-            textArea.append("JohnBot: Just a shor introduction: I'm just a bot-> JhonBot is my name, and I can help you with some information. Please type ACTION to see what can I do for you!" + '\n' + '\n');
+            textArea.append("JohnBot: Just a shor introduction: I'm just a bot-> JhonBot is my name, and I can help you with some information. Please type ACTIONS to see what can I do for you!" + '\n' + '\n');
         }
 
         if (jTextField.getText().equals("how are you?")) {
@@ -123,7 +123,7 @@ public class ConversationPage extends JFrame {
             textArea.append("JohnBot: Yes, I can help you. Just tape ACTIONS to see what I can do for you." + '\n' + '\n');
         }
 
-        if (Arrays.asList(output).contains("ACTIONS")) {
+        if (jTextField.getText().equalsIgnoreCase("actions")) {
             textArea.append("JohnBot: List with things:" +
                     '\n' + "1. time;" +
                     '\n' + "2. sum + 1st number + 2nd number;" +
